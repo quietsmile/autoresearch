@@ -116,3 +116,4 @@ b585f23	0.987503	63.9	discard	softmax_scale=0.5 (sharper attn hurts, default is 
 06de011	0.977329	63.1	discard	VE only on M+L layers (VE on S layers also important)
 49d3ed9	0.976701	64.3	discard	x0 residual post-block (pre-block is better)
 c596906	0.974782	63.9	keep	resid_lambdas init=0.9 (LayerScale dampening) NEW BEST
+6f316d1	0.976063	63.9	discard	resid_lambdas init=0.8 (too much dampening)
