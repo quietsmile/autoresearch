@@ -193,10 +193,11 @@ class GPT(nn.Module):
 
     def _compute_window_sizes(self, config):
         pattern = config.window_pattern.upper()
-        assert all(c in "SL" for c in pattern)
+        assert all(c in "SLM" for c in pattern)
         long_window = config.sequence_len
         short_window = long_window // 16
-        char_to_window = {"L": (long_window, 0), "S": (short_window, 0)}
+        medium_window = long_window // 4
+        char_to_window = {"L": (long_window, 0), "S": (short_window, 0), "M": (medium_window, 0)}
         window_sizes = []
         for layer_idx in range(config.n_layer):
             char = pattern[layer_idx % len(pattern)]
@@ -431,7 +432,7 @@ class MuonAdamW(torch.optim.Optimizer):
 # Model architecture
 ASPECT_RATIO = 96       # model_dim = depth * ASPECT_RATIO (96*8=768)
 HEAD_DIM = 128          # target head dimension for attention
-WINDOW_PATTERN = "SSSL" # sliding window pattern: L=full, S=half context
+WINDOW_PATTERN = "SSSM" # sliding window pattern: L=full, M=medium, S=short
 
 # Optimization
 TOTAL_BATCH_SIZE = 2**18 # ~262K tokens per optimizer step (no grad accum)
