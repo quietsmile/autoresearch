@@ -17,3 +17,16 @@ bda147f	1.001237	43.9	discard	EMBEDDING_LR=0.4
 516a37b	1.010986	39.8	discard	MLP_RATIO=3 from 4
 3e05bf7	1.007337	43.9	discard	cosine LR warmdown
 0ca621f	1.002564	43.9	keep	softcap=20 marginal improvement
+352d230	1.009238	43.9	discard	WARMUP_RATIO=0.05
+6219720	1.037436	43.9	discard	Muon constant LR no warmdown
+62b78c4	1.009886	43.9	discard	Muon momentum ramp 300->600
+6a7ba9b	1.006645	43.9	discard	FINAL_LR_FRAC=0.02
+47c4f4c	1.007083	43.9	discard	WINDOW_PATTERN=SSL
+bfde7f4	1.009866	43.9	discard	gradient clipping norm=1.0
+212f543	1.007122	65.6	discard	VE in all layers
+6cc959b	1.007576	43.9	discard	x0_lambdas init=0.0
+561bca7	0.000000	0.0	crash	max-autotune (too slow autotune)
+e50ff81	1.012346	43.9	discard	MATRIX_LR=0.03
+58f7411	0.000000	0.0	crash	LayerNorm dtype issue with flash attention
+7d869cb	1.006542	43.9	discard	SCALAR_LR=0.2
+24423be	1.018081	39.1	discard	DEPTH=7 ASPECT_RATIO=73 (fewer layers, more steps expected but got fewer)
