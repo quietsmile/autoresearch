@@ -35,3 +35,13 @@ e50ff81	1.012346	43.9	discard	MATRIX_LR=0.03
 9aff98b	0.982915	63.9	keep	EMBEDDING_LR=1.5 on 768-dim (marginal improvement)
 23b6d51	0.982122	63.9	keep	short_window //2->1//8 (128 tokens more steps NEW BEST)
 dae8d0d	0.980226	63.9	keep	short_window //16 (64 tokens 1143 steps NEW BEST)
+52c0d0e	0.984599	63.9	discard	WINDOW_PATTERN=SSSS all short (no full attn hurts)
+6187d2b	0.980273	63.9	discard	WARMDOWN=0.6 (same as 0.7 within noise)
+0a6d442	0.981969	71.6	discard	DEPTH=9 AR=85 768-dim more VRAM fewer steps
+043ff55	0.987046	63.9	discard	UNEMBEDDING_LR=0.04 (too high destabilizes)
+bd5a022	0.980444	63.9	discard	ADAM_BETAS beta2=0.98 (marginal worse)
+6cc0f93	0.980321	63.9	discard	RoPE base=50000 (no improvement on GPU0)
+195984e	0.980510	63.9	discard	ve_gate_channels=64 (slightly worse)
+c75d0f1	0.983982	63.9	discard	WARMUP_RATIO=0.01 (hurts by stealing peak LR time)
+35fea66	0.993909	74.0	discard	AR=112 n_embd=896 (much wider but way fewer steps)
+3c840fb	0.982153	63.9	discard	WINDOW_PATTERN=SSLL (4 full layers reduces steps)
