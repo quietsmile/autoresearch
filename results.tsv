@@ -72,3 +72,4 @@ c2af343	0.976555	63.9	discard	Muon ns_steps=10 (no-op same as 5, variance only)
 2b37020	0.977340	64.0	discard	SCALAR_LR=0.7 (worse than 0.5)
 03eae0d	0.978312	64.0	discard	UNEMBEDDING_LR=0.006 (worse than 0.008)
 50a5bba	0.977554	64.0	discard	WD decay synced with LR warmdown (linear over all training is better)
+2528169	0.975749	64.0	keep	SSSM window pattern (M=256 medium window, 3-level hierarchy) NEW BEST
