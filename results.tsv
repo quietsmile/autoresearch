@@ -74,3 +74,4 @@ c2af343	0.976555	63.9	discard	Muon ns_steps=10 (no-op same as 5, variance only)
 50a5bba	0.977554	64.0	discard	WD decay synced with LR warmdown (linear over all training is better)
 2528169	0.975749	64.0	keep	SSSM window pattern (M=256 medium window, 3-level hierarchy) NEW BEST
 a146ec4	0.976184	64.0	discard	SSMS pattern (2 M windows, too few steps)
+c68d9f8	0.976477	64.0	discard	M=//8 (128 tokens too close to S=64 not enough benefit)
