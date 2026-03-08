@@ -461,6 +461,8 @@ device = torch.device("cuda")
 autocast_ctx = torch.amp.autocast(device_type="cuda", dtype=torch.bfloat16)
 H100_BF16_PEAK_FLOPS = 989.5e12
 
+gpu_id = os.environ.get("CUDA_VISIBLE_DEVICES", "0")
+print(f"GPU: cuda (CUDA_VISIBLE_DEVICES={gpu_id})")
 tokenizer = Tokenizer.from_directory()
 vocab_size = tokenizer.get_vocab_size()
 print(f"Vocab size: {vocab_size:,}")

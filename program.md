@@ -2,6 +2,21 @@
 
 This is an experiment to have the LLM do its own research.
 
+## Multi-GPU mode (optional)
+
+If you are running inside a git worktree (i.e., the working directory is
+`autoresearch-gpuN`), you are one of several parallel workers. Each worker
+operates completely independently — no coordination needed.
+
+Key points:
+- Your GPU is pinned via `CUDA_VISIBLE_DEVICES` (already set in your shell).
+  Do NOT change this.
+- **Always prefix training runs** with the env var to be safe:
+  `CUDA_VISIBLE_DEVICES=$GPU_ID uv run train.py > run.log 2>&1`
+- Branch name must include the gpu id, e.g. `autoresearch/mar8-gpu3`.
+- `results.tsv` and `run.log` live in your worktree — no conflicts with other workers.
+- You do NOT need to know what other GPUs are doing. Explore independently.
+
 ## Setup
 
 To set up a new experiment, work with the user to:
