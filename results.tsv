@@ -99,3 +99,4 @@ b83d618	0.980010	64.0	discard	Muon momentum 0.85->0.98 (too much inertia, 0.95 i
 f7a2681	0.975908	63.9	discard	EMBEDDING_LR=1.2 (1.5 is optimal)
 f08b604	0.975107	63.9	discard	Muon momentum ramp 200 steps (tied with 300 steps)
 f602c47	0.975783	63.9	discard	attn logit softcap=50.0 (hurts with QK norm)
+1991e2c	0.981124	62.3	discard	Q-only norm (K norm essential too)
