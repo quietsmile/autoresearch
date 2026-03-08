@@ -126,3 +126,4 @@ a1cfda8	0.974848	63.9	discard	WARMDOWN=0.92 with resid=0.9 (0.90 still optimal)
 f1f182f	0.975510	63.9	discard	wte init std=0.5 (std=1.0 is optimal)
 807d7fb	0.975070	63.9	discard	WEIGHT_DECAY=0.18 with resid=0.9 (0.2 is optimal)
 c54997c	0.975271	63.9	discard	resid_lambdas LR 0.05x (0.01x is optimal)
+6ddf836	0.976501	64.3	discard	true LayerScale (scale block output) worse than residual dampening
