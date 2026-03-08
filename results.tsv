@@ -48,3 +48,4 @@ c75d0f1	0.983982	63.9	discard	WARMUP_RATIO=0.01 (hurts by stealing peak LR time)
 d0d85b2	0.978553	63.9	keep	QK norm BEFORE RoPE (norm->rope) NEW BEST
 da1126c	0.978938	63.9	discard	RoPE base=50000 on QK-norm-before-rope (no improvement)
 7366097	0.986354	63.9	discard	L-layer window 2048->512 (hurts long-range context)
+ebe5982	0.977611	63.9	keep	UNEMBEDDING_LR=0.008 (GPU4 confirmed optimal) NEW BEST
