@@ -1,2 +1,19 @@
 commit	val_bpb	memory_gb	status	description
 2a8a0b7	0.996205	44.0	keep	baseline (train.py as-is)
+79738f1	1.001938	44.0	discard	reduce WARMDOWN_RATIO 0.5->0.2
+66ef8b4	0.990328	43.9	keep	halve batch 2^19->2^18 (no grad accum, 2x steps)
+a89fd11	1.019848	22.2	discard	TOTAL_BATCH_SIZE=2^17 DEVICE_BATCH_SIZE=64 too noisy
+e04c4d8	1.010627	43.9	discard	MATRIX_LR 0.04->0.05 unstable
+f6443a9	1.014852	43.9	discard	WARMDOWN_RATIO 0.5->0.3
+9404455	1.020394	39.8	discard	SwiGLU MLP relu2 is better
+17d9b0f	0.990586	63.6	discard	DEPTH=12 ASPECT_RATIO=40 same width deeper no gain
+571990f	1.016408	40.3	discard	GQA n_kv_head=2
+8c428b0	1.008336	40.3	discard	FINAL_LR_FRAC=0.1
+1ff7ebe	1.005484	43.9	discard	WEIGHT_DECAY=0.0
+2036903	1.001781	43.9	discard	WINDOW_PATTERN=LLLL all full attention
+abbd93f	1.022616	34.0	discard	DEPTH=6 ASPECT_RATIO=85 same width shallower
+b8bdabf	1.009569	44.0	discard	HEAD_DIM=64 8 heads vs 4
+bda147f	1.001237	43.9	discard	EMBEDDING_LR=0.4
+516a37b	1.010986	39.8	discard	MLP_RATIO=3 from 4
+3e05bf7	1.007337	43.9	discard	cosine LR warmdown
+0ca621f	1.002564	43.9	keep	softcap=20 marginal improvement
