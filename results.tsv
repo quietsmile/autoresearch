@@ -83,3 +83,4 @@ ef5c072	0.975236	64.0	keep	WARMDOWN=0.85 on SSSM (better) NEW BEST
 412099d	0.975218	64.0	keep	WARMDOWN=0.90 on SSSM (marginal improvement) NEW BEST
 a34d5be	0.975376	64.0	discard	WARMDOWN=0.95 (0.90 is sweet spot)
 dec51c3	0.976082	64.0	discard	FINAL_LR_FRAC=0.0 (0.02 is better on SSSM+WD0.90)
+4a4b8cf	0.975107	64.0	keep	FINAL_LR_FRAC=0.03 on SSSM+WD0.90 (better than 0.02) NEW BEST
