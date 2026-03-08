@@ -148,3 +148,4 @@ f7a5ae5	0.987357	N/A	worse	ASPECT_RATIO=56 (512-dim, more steps but worse qualit
 995f506	0.984964	N/A	worse	HEAD_DIM=64 (10 heads, worse)
 116b960	0.981031	N/A	worse	DEPTH=8, ASPECT_RATIO=80 (640-dim, fewer layers worse)
 36cd405	0.977487	60.2	keep	Muon beta2=0.9 (tiny improvement)
+ece67e1	0.977361	60.2	keep	Muon beta2=0.85 (tiny improvement)
