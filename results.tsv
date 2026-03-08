@@ -57,3 +57,4 @@ ebe5982	0.977611	63.9	keep	UNEMBEDDING_LR=0.008 (GPU4 confirmed optimal) NEW BES
 f070ca6	0.977691	63.9	discard	FINAL_LR_FRAC=0.02 (marginal worse than 0.0)
 5936521	0.978574	63.9	discard	Muon momentum warmup 100 steps (worse than 300)
 688924a	0.977957	63.9	discard	softcap=15 (20 is better on this config)
+c3afc55	0.977063	63.9	keep	WARMDOWN=0.75 + FINAL_LR_FRAC=0.02 combo NEW BEST
