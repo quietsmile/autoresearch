@@ -32,3 +32,4 @@ e50ff81	1.012346	43.9	discard	MATRIX_LR=0.03
 24423be	1.018081	39.1	discard	DEPTH=7 ASPECT_RATIO=73 (fewer layers, more steps expected but got fewer)
 8cfe4ee	0.983209	63.9	keep	AR=96 EMBD=1.0 beta1=0.85 WARMDOWN=0.7 768-dim NEW BEST
 013e1f0	0.987808	63.9	discard	remove softcap on 768-dim (softcap=20 helps)
+9aff98b	0.982915	63.9	keep	EMBEDDING_LR=1.5 on 768-dim (marginal improvement)
