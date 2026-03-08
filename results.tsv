@@ -49,3 +49,11 @@ d0d85b2	0.978553	63.9	keep	QK norm BEFORE RoPE (norm->rope) NEW BEST
 da1126c	0.978938	63.9	discard	RoPE base=50000 on QK-norm-before-rope (no improvement)
 7366097	0.986354	63.9	discard	L-layer window 2048->512 (hurts long-range context)
 ebe5982	0.977611	63.9	keep	UNEMBEDDING_LR=0.008 (GPU4 confirmed optimal) NEW BEST
+935aeba	0.978625	63.9	discard	WEIGHT_DECAY=0.3 (worse than 0.2)
+82d8bab	0.979727	70.0	discard	MLP_RATIO=5 (more capacity but fewer steps)
+22c10d3	0.977640	63.9	discard	WARMDOWN_RATIO=0.75 (essentially tied with 0.7)
+476da55	0.994997	63.9	discard	GELU activation (relu^2 clearly better)
+90cfb5e	0.978094	63.9	discard	x0_lambdas init=0.3 (slightly worse than 0.1)
+f070ca6	0.977691	63.9	discard	FINAL_LR_FRAC=0.02 (marginal worse than 0.0)
+5936521	0.978574	63.9	discard	Muon momentum warmup 100 steps (worse than 300)
+688924a	0.977957	63.9	discard	softcap=15 (20 is better on this config)
