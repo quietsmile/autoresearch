@@ -58,3 +58,8 @@ f070ca6	0.977691	63.9	discard	FINAL_LR_FRAC=0.02 (marginal worse than 0.0)
 5936521	0.978574	63.9	discard	Muon momentum warmup 100 steps (worse than 300)
 688924a	0.977957	63.9	discard	softcap=15 (20 is better on this config)
 c3afc55	0.977063	63.9	keep	WARMDOWN=0.75 + FINAL_LR_FRAC=0.02 combo NEW BEST
+23a6f01	0.977548	63.9	discard	WARMDOWN=0.8 (0.75 is sweet spot)
+c0dd515	0.977819	63.9	discard	ADAM_BETAS beta1=0.9 (0.85 is better)
+bdc1e7e	0.976898	63.9	discard	Muon ns_steps=7 (no-op: only 5 polar coefficients)
+c2af343	0.976555	63.9	discard	Muon ns_steps=10 (no-op same as 5, variance only)
+5d6006c	0.989810	57.9	discard	parallel attn+MLP blocks (MLP can't see attn output, quality tanks)
