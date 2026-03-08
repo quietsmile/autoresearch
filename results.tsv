@@ -114,3 +114,4 @@ b585f23	0.987503	63.9	discard	softmax_scale=0.5 (sharper attn hurts, default is 
 8eeb51b	0.975659	32.4	discard	TOTAL=2^17 BATCH=64 (2x steps but noisier gradients)
 3717649	0.982868	42.1	discard	DEPTH=9 BATCH=64 TOTAL=2^17 (too slow per step)
 06de011	0.977329	63.1	discard	VE only on M+L layers (VE on S layers also important)
+49d3ed9	0.976701	64.3	discard	x0 residual post-block (pre-block is better)
