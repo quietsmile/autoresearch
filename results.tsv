@@ -133,3 +133,4 @@ df9b293	0.978883	60.2	keep	short_window = 1/4 context = 512 (improvement! more s
 fad36af	0.981106	60.2	worse	short_window = 1/8 context = 256 (worse, fewer local context)
 1413b11	0.978590	60.2	keep	WINDOW_PATTERN=SSSSL with short_window=1/4 (improvement!)
 8eccbc2	0.979148	60.2	worse	WINDOW_PATTERN=SSSSSL (worse, SSSSL better)
+897ccde	0.977981	60.2	keep	MATRIX_LR=0.04 with SSSSL+short_window=1/4 (improvement!)
