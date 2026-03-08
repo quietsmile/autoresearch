@@ -106,3 +106,4 @@ abf36e9	0.000000	0.0	crash	DEVICE_BATCH_SIZE=256 (larger than TOTAL_BATCH_SIZE/s
 c60f35d	0.979319	66.9	discard	QKV norm (V norm conflicts with value embeddings)
 8ba4ed5	0.975635	63.9	discard	WEIGHT_DECAY=0.25 (0.2 is optimal)
 5a8447d	0.975576	63.9	discard	ADAM_BETAS beta1=0.80 (0.85 is optimal)
+640fb06	0.993422	57.9	discard	plain ReLU activation (relu^2 is much better)
