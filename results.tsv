@@ -95,3 +95,4 @@ b83d618	0.980010	64.0	discard	Muon momentum 0.85->0.98 (too much inertia, 0.95 i
 15b8059	0.976296	63.9	discard	x0_lambdas init=0.2 (worse than 0.1)
 161e52b	0.976538	63.9	discard	SCALAR_LR=0.3 (worse than 0.5)
 15edeb4	0.975594	63.9	discard	Muon momentum ramp start 0.85->0.90 (0.85 start better)
+155ef0a	0.978674	63.9	discard	constant weight decay (linear annealing to 0 is better)
