@@ -118,3 +118,4 @@ b585f23	0.987503	63.9	discard	softmax_scale=0.5 (sharper attn hurts, default is 
 c596906	0.974782	63.9	keep	resid_lambdas init=0.9 (LayerScale dampening) NEW BEST
 6f316d1	0.976063	63.9	discard	resid_lambdas init=0.8 (too much dampening)
 f9e9ed8	0.978374	63.9	discard	resid_lambdas init=0.95 (0.9 is sweet spot)
+733bf01	0.976332	63.9	discard	x0_lambdas=0.05 with resid=0.9 (0.1 optimal)
