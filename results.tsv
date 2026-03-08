@@ -80,3 +80,4 @@ fbf58ac	0.981426	64.0	discard	softcap=30 (worse, 20 is optimal on SSSM)
 b8938ce	0.976119	64.0	discard	SSSM with S=//32 (32 tokens too narrow even with M=256)
 dba97fc	0.975443	64.0	keep	WARMDOWN=0.80 on SSSM (re-tuned from 0.75) NEW BEST
 ef5c072	0.975236	64.0	keep	WARMDOWN=0.85 on SSSM (better) NEW BEST
+412099d	0.975218	64.0	keep	WARMDOWN=0.90 on SSSM (marginal improvement) NEW BEST
