@@ -136,3 +136,4 @@ fad36af	0.981106	60.2	worse	short_window = 1/8 context = 256 (worse, fewer local
 897ccde	0.977981	60.2	keep	MATRIX_LR=0.04 with SSSSL+short_window=1/4 (improvement!)
 356bda5	0.979261	60.2	worse	MATRIX_LR=0.045 (worse)
 bb738f0	0.977579	60.2	keep	WARMDOWN_RATIO=0.7 with new window (improvement!)
+1497cb2	0.977623	60.2	worse	WARMDOWN_RATIO=0.75 (essentially same, 0.7 slightly better)
