@@ -45,3 +45,4 @@ bd5a022	0.980444	63.9	discard	ADAM_BETAS beta2=0.98 (marginal worse)
 c75d0f1	0.983982	63.9	discard	WARMUP_RATIO=0.01 (hurts by stealing peak LR time)
 35fea66	0.993909	74.0	discard	AR=112 n_embd=896 (much wider but way fewer steps)
 3c840fb	0.982153	63.9	discard	WINDOW_PATTERN=SSLL (4 full layers reduces steps)
+d0d85b2	0.978553	63.9	keep	QK norm BEFORE RoPE (norm->rope) NEW BEST
