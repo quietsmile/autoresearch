@@ -138,3 +138,4 @@ fad36af	0.981106	60.2	worse	short_window = 1/8 context = 256 (worse, fewer local
 bb738f0	0.977579	60.2	keep	WARMDOWN_RATIO=0.7 with new window (improvement!)
 1497cb2	0.977623	60.2	worse	WARMDOWN_RATIO=0.75 (essentially same, 0.7 slightly better)
 427e90c	0.980385	60.2	worse	MATRIX_LR=0.05 (worse)
+63904e0	0.978148	60.2	worse	FINAL_LR_FRAC=0.0 (slightly worse)
