@@ -127,3 +127,5 @@ f1f182f	0.975510	63.9	discard	wte init std=0.5 (std=1.0 is optimal)
 807d7fb	0.975070	63.9	discard	WEIGHT_DECAY=0.18 with resid=0.9 (0.2 is optimal)
 c54997c	0.975271	63.9	discard	resid_lambdas LR 0.05x (0.01x is optimal)
 6ddf836	0.976501	64.3	discard	true LayerScale (scale block output) worse than residual dampening
+8174482	1.152531	64.2	discard	EMA decay=0.999 broken (32% contamination from random init)
+409fa26	0.978954	63.9	discard	HEAD_DIM=192 n_head=4 (6 heads with 128 is better)
