@@ -196,7 +196,7 @@ class GPT(nn.Module):
         assert all(c in "SML" for c in pattern)
         long_window = config.sequence_len
         short_window = long_window // 16
-        medium_window = long_window // 4
+        medium_window = long_window // 2
         char_to_window = {"L": (long_window, 0), "S": (short_window, 0), "M": (medium_window, 0)}
         window_sizes = []
         for layer_idx in range(config.n_layer):
