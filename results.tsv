@@ -132,3 +132,6 @@ c54997c	0.975271	63.9	discard	resid_lambdas LR 0.05x (0.01x is optimal)
 b2e55a6	0.976609	71.6	discard	DEPTH=9 AR=85 SSSMSSS (more VRAM fewer steps)
 1ca326e	0.974729	64.0	keep	Muon beta2=0.90 (marginal improvement) NEW BEST
 b08a8a4	0.974732	64.0	discard	Muon beta2=0.80 (0.85 is sweet spot)
+dc69294	0.974652	64.0	discard	MATRIX_LR=0.05 with beta2=0.85 (0.045 still better)
+e750872	0.975670	64.0	discard	MATRIX_LR=0.04 with beta2=0.85 (0.045 still optimal)
+3880bf0	0.981927	64.0	discard	MLP-first block order (attention-first is better)
