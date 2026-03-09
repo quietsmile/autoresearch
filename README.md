@@ -1,6 +1,34 @@
 # autoresearch
 
-![teaser](progress.png)
+![8-GPU parallel search](progress.png)
+
+## This Fork
+
+This fork by [@quietsmile](https://github.com/quietsmile) ran **8 parallel GPU workers** (~1,060 experiments over ~8 hours, March 8–9 2026) on 8 H100 GPUs, each agent operating independently on its own git worktree and `CUDA_VISIBLE_DEVICES` binding.
+
+**Key result:** val_bpb improved from **0.9979 → 0.9723 (−2.6%)**.
+
+### Convergent findings (independently discovered by 3+ GPUs)
+
+| Technique | GPUs | Typical gain |
+|-----------|------|-------------|
+| Batch size 2^19 → 2^18 (2× gradient steps) | All 8 | −0.008–0.012 |
+| Wider model: ASPECT_RATIO=96 (768-dim) | 4 | −0.008–0.014 |
+| Short sliding window: seqlen/16 = 128 tokens | 4 | −0.003–0.006 |
+| QK-norm placed **before** RoPE | 3 | −0.002–0.003 |
+| Extended warmdown ratio: 0.7–0.9 | 4 | −0.002–0.005 |
+| UNEMBEDDING_LR = 0.008 (2× default) | 4 | −0.001–0.002 |
+| Non-zero FINAL_LR_FRAC = 0.02–0.04 | 4 | −0.001–0.002 |
+| Adam/Muon beta2 = 0.90 | 5 | −0.001–0.002 |
+
+The convergence of multiple independent agents on the same techniques provides high confidence that these are genuine improvements rather than noise.
+
+![merge visualization](progress_merge.png)
+
+**Full results:** [`docs/report_mar9.md`](docs/report_mar9.md)
+**Future research vision:** [`docs/future_directions.md`](docs/future_directions.md)
+
+---
 
 *One day, frontier AI research used to be done by meat computers in between eating, sleeping, having other fun, and synchronizing once in a while using sound wave interconnect in the ritual of "group meeting". That era is long gone. Research is now entirely the domain of autonomous swarms of AI agents running across compute cluster megastructures in the skies. The agents claim that we are now in the 10,205th generation of the code base, in any case no one could tell if that's right or wrong as the "code" is now a self-modifying binary that has grown beyond human comprehension. This repo is the story of how it all began. -@karpathy, March 2026*.
 
