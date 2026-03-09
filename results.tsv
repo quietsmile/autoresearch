@@ -158,3 +158,6 @@ d351a7e	0.975066	64.0	discard	dynamic Muon beta2 decay 0.85->0.80 (constant 0.85
 ae7b35e	0.975514	64.0	discard	x0_lambdas Adam beta1=0.85 (0.96 is better)
 2bcea80	0.975207	64.0	discard	MATRIX_LR=0.048 (0.045 is optimal)
 395ab18	0.980532	66.2	discard	DEPTH=10 n_embd=640 (narrower+deeper, wider 768 is better)
+d821afb	0.975658	64.0	discard	depth-graded x0_lambdas 0.15->0.05 (uniform 0.1 is better)
+0441b27	0.974687	64.0	discard	ve_gate_channels=16 (32 is optimal)
+e61e3b3	0.975792	64.0	discard	depth-graded resid_lambdas 0.95->0.85 (uniform 0.9 is better)
