@@ -143,3 +143,5 @@ e750872	0.975670	64.0	discard	MATRIX_LR=0.04 with beta2=0.85 (0.045 still optima
 97e2446	0.975484	64.0	discard	resid_lambdas init=0.92 with beta2=0.85 (0.9 confirmed optimal)
 83a7f39	0.975764	64.0	discard	layer-type-specific resid_lambdas S=0.9 M=0.85 L=0.95
 0e02b64	0.986254	64.2	discard	prev_lambdas skip from prev block input (instability at LR=0.5)
+7af27cc	0.974279	64.0	keep	Muon beta2=0.85 (best variance adaptation) CONFIRMED BEST
+0bd76a7	0.981702	63.9	discard	relu^3 activation (relu^2 is better)
