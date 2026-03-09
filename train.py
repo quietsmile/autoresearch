@@ -103,7 +103,7 @@ class MLP(nn.Module):
 
     def forward(self, x):
         x = self.c_fc(x)
-        x = F.relu(x).square()
+        x = F.relu(x) * x  # SReLU-like: relu(x)*x = max(0,x)*x
         x = self.c_proj(x)
         return x
 
