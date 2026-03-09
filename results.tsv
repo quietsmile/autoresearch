@@ -151,3 +151,5 @@ e28fa3f	0.978568	64.0	discard	remove cautious WD mask in Muon (masking is import
 ca6c5ea	0.975418	64.0	discard	Muon momentum ramp 300->500 steps (300 is optimal)
 0000b19	0.975169	64.0	discard	Muon momentum start 0.80 (0.85 is optimal start)
 e13f68a	0.000000	0.0	crash	MTP aux loss t+2 (OOM: logits materialization too large)
+7e96135	0.979196	63.6	discard	x0 refresh at mid-network layer 4 (original x0 is better)
+96922a2	0.975339	64.0	discard	UNEMBEDDING_LR=0.012 (0.008 is optimal)
