@@ -173,3 +173,4 @@ dbc89b0	0.989175	60.2	worse	parallel attention+MLP (much worse, sequential bette
 a19f25d	0.978374	60.2	worse	WEIGHT_DECAY=0.25 (slightly worse)
 295994d	0.977578	60.2	worse	WD decays to 10% final (slightly worse)
 2333b30	0.979105	60.2	worse	x0_lambdas with regular betas (0.96 beta1 was important)
+fdfa771	0.977032	60.2	keep	x0_lambdas betas=(0.98, 0.95) (improvement!)
