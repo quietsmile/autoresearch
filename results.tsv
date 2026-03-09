@@ -137,3 +137,9 @@ e750872	0.975670	64.0	discard	MATRIX_LR=0.04 with beta2=0.85 (0.045 still optima
 3880bf0	0.981927	64.0	discard	MLP-first block order (attention-first is better)
 6034beb	0.976534	64.0	discard	Muon momentum end 0.97 (0.95 is optimal)
 6ac89c7	0.974692	64.0	discard	Muon momentum end 0.93 (0.95 is optimal)
+0770108	1.011560	64.0	discard	norm(x) before resid_lambdas (loses magnitude info)
+3551ca3	0.000000	0.0	crash	label smoothing 0.05 (OOM: large vocab * large batch)
+8f5f217	0.975881	64.0	discard	resid_lambdas init=0.88 with beta2=0.85 (0.9 still optimal)
+97e2446	0.975484	64.0	discard	resid_lambdas init=0.92 with beta2=0.85 (0.9 confirmed optimal)
+83a7f39	0.975764	64.0	discard	layer-type-specific resid_lambdas S=0.9 M=0.85 L=0.95
+0e02b64	0.986254	64.2	discard	prev_lambdas skip from prev block input (instability at LR=0.5)
