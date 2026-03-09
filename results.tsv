@@ -151,3 +151,4 @@ f7a5ae5	0.987357	N/A	worse	ASPECT_RATIO=56 (512-dim, more steps but worse qualit
 ece67e1	0.977361	60.2	keep	Muon beta2=0.85 (tiny improvement)
 de33329	0.977455	60.2	worse	Muon beta2=0.8 (slightly worse, 0.85 better)
 83d0333	0.977627	60.2	worse	MATRIX_LR=0.038 (slightly worse, 0.04 better)
+84d5d2e	0.979702	60.2	worse	EMBEDDING_LR=0.65 (worse)
